@@ -1,0 +1,50 @@
+  Copyright (C) 2006  Vojtech Gondzala <vojtech.gondzala(at)google(dot)com>
+
+  This code is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  any later version.
+
+  This code is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this code.  If not, see <http://www.gnu.org/licenses/>.
+
+This is stub of "/usr/share/X11/xkb/rules/evdev.xml", put it into tag "layoutlist".
+
++++ BEGIN +++
+    <layout>
+      <configItem>
+       <name>vok</name>
+        <shortDescription>vok</shortDescription>
+        <description>vogo's keyboard</description>
+        <languageList><iso639Id>cze</iso639Id></languageList>
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>czech</name>
+            <description>czech symbols priority</description>
+            <languageList><iso639Id>cze</iso639Id></languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>qwertz</name>
+            <description>qwertz variant</description>
+            <languageList><iso639Id>cze</iso639Id></languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>czech_qwertz</name>
+            <description>qwertz variant, czech symbols priority</description>
+            <languageList><iso639Id>cze</iso639Id></languageList>
+          </configItem>
+        </variant>
+      </variantList>
+    </layout>
++++ END +++
