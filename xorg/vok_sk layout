@@ -18,31 +18,31 @@ This is stub of "/usr/share/X11/xkb/rules/evdev.xml", put it into tag "layoutlis
 +++ BEGIN +++
     <layout>
       <configItem>
-       <name>vok</name>
-        <shortDescription>vok</shortDescription>
-        <description>vogo's keyboard</description>
-        <languageList><iso639Id>cze</iso639Id></languageList>
+       <name>vok_sk</name>
+        <shortDescription>vok SK</shortDescription>
+        <description>vogo's keyboard (slovak)</description>
+        <languageList><iso639Id>slo</iso639Id></languageList>
       </configItem>
       <variantList>
         <variant>
           <configItem>
-            <name>czech</name>
-            <description>czech symbols priority</description>
-            <languageList><iso639Id>cze</iso639Id></languageList>
+            <name>slovak</name>
+            <description>slovak symbols priority</description>
+            <languageList><iso639Id>slo</iso639Id></languageList>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>qwertz</name>
             <description>qwertz variant</description>
-            <languageList><iso639Id>cze</iso639Id></languageList>
+            <languageList><iso639Id>slo</iso639Id></languageList>
           </configItem>
         </variant>
         <variant>
           <configItem>
-            <name>czech_qwertz</name>
-            <description>qwertz variant, czech symbols priority</description>
-            <languageList><iso639Id>cze</iso639Id></languageList>
+            <name>slovak_qwertz</name>
+            <description>qwertz variant, slovak symbols priority</description>
+            <languageList><iso639Id>slo</iso639Id></languageList>
           </configItem>
         </variant>
       </variantList>

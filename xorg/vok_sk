@@ -1,0 +1,138 @@
+//  Copyright (C) 2006  Vojtech Gondzala <vojtech.gondzala(at)gmail(dot)com>
+//
+//  This code is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  any later version.
+//
+//  This code is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this code.  If not, see <http://www.gnu.org/licenses/>.
+//
+//  vok - Czech typographical/programmer keyboard (v 1.0)
+//
+//  /usr/share/X11/xkb/symbols/vok
+//
+
+partial default alphanumeric_keys
+xkb_symbols "basic" {
+
+    include "us"
+
+    include "level3(ralt_switch)"
+
+    name[Group1]= "vok";
+
+    key <TLDE> {	[     grave,	asciitilde,	NoSymbol,	dead_abovering	]	};
+    key <AE01> {	[	  1,	exclam,		NoSymbol,	NoSymbol	]	};
+    key <AE02> {	[	  2,	at,		lcaron,		Lcaron		]	};
+    key <AE03> {	[	  3,	numbersign,	scaron,		Scaron		]	};
+    key <AE04> {	[	  4,	dollar,		ccaron,		Ccaron		]	};
+    key <AE05> {	[	  5,	percent,	tcaron,		Tcaron		]	};
+    key <AE06> {	[	  6,	asciicircum,	zcaron,		Zcaron		]	};
+    key <AE07> {	[	  7,	ampersand,	yacute,		Yacute		]	};
+    key <AE08> {	[	  8,	asterisk,	aacute,		Aacute		]	};
+    key <AE09> {	[	  9,	parenleft,	iacute,		Iacute		]	};
+    key <AE10> {	[	  0,	parenright,	eacute,		Eacute		]	};
+    key <AE11> {	[     minus,	underscore,	U2013,		U2212		]	};
+    key <AE12> {	[     equal,	plus,		dead_acute,	dead_caron	]	};
+
+    key <AD01> {	[	  q,	Q, 		NoSymbol,	NoSymbol	]	};
+    key <AD02> {	[	  w,	W,		EuroSign,	NoSymbol	]	};
+    key <AD03> {	[	  e,	E,		eacute,		ecaron		]	};
+    key <AD04> {	[	  r,	R,		rcaron,		racute		]	};
+    key <AD05> {	[	  t,	T,		tcaron,		NoSymbol        ]	};
+    key <AD06> {	[	  y,	Y,		yacute,		NoSymbol	]	};
+    key <AD07> {	[	  u,	U,		uacute,		uring		]	};
+    key <AD08> {	[	  i,	I,		iacute,		NoSymbol	]	};
+    key <AD09> {	[	  o,	O,		oacute,		ocircumflex	]	};
+    key <AD10> {	[	  p,	P,		NoSymbol,	NoSymbol	]	};
+    key <AD11> {	[ bracketleft,	braceleft,	uacute,		Uacute		]	};
+    key <AD12> {	[ bracketright,	braceright,	adiaeresis,	Adiaeresis	]	};
+
+    key <AC01> {	[	  a,	A,		aacute,		adiaeresis	]	};
+    key <AC02> {	[	  s,	S,		scaron,		NoSymbol	]	};
+    key <AC03> {	[	  d,	D,		dcaron,		NoSymbol	]	};
+    key <AC04> {	[	  f,	F,		NoSymbol,	NoSymbol	]	};
+    key <AC05> {	[	  g,	G,		NoSymbol,	NoSymbol	]	};
+    key <AC06> {	[	  h,	H,		NoSymbol,	NoSymbol	]	};
+    key <AC07> {	[	  j,	J,		NoSymbol,	NoSymbol	]	};
+    key <AC08> {	[	  k,	K,		NoSymbol,	NoSymbol	]	};
+    key <AC09> {	[	  l,	L,		lcaron,		lacute		]	};
+    key <AC10> {	[ semicolon,	colon,		ocircumflex,	Ocircumflex	]	};
+    key <AC11> {	[ apostrophe,	quotedbl,	U201E,		U201C		]	};
+
+    key <AB01> {	[	  z,	Z,		zcaron,		NoSymbol	]	};
+    key <AB02> {	[	  x,	X,		NoSymbol,	NoSymbol	]	};
+    key <AB03> {	[	  c,	C,		ccaron,		NoSymbol	]	};
+    key <AB04> {	[	  v,	V,		NoSymbol,	NoSymbol	]	};
+    key <AB05> {	[	  b,	B,		NoSymbol,	NoSymbol	]	};
+    key <AB06> {	[	  n,	N,		ncaron,		NoSymbol	]	};
+    key <AB07> {	[	  m,	M,		NoSymbol,	NoSymbol	]	};
+    key <AB08> {	[     comma,	less,		NoSymbol,	NoSymbol	]	};
+    key <AB09> {	[    period,	greater,	U2026,		NoSymbol	]	};
+    key <AB10> {	[     slash,	question,	NoSymbol,	NoSymbol	]	};
+
+    key <BKSL> {	[ backslash,	bar,		ncaron,		Ncaron		]	};
+
+    key <LSGT> {	[ backslash,	bar,		diaeresis,	circumflex	]	};
+
+    key <SPCE> {	[     space,    U00A0,         U2009,		space		]	};
+
+};
+
+partial alphanumeric_keys
+xkb_symbols "qwertz" {
+
+    include "vok_sk(basic)"
+
+    include "level3(ralt_switch)"
+
+    name[Group1]= "qwertz";
+
+    key <AB01> {	[	  y,	Y,		yacute,		NoSymbol	]	};
+    key <AD06> {	[	  z,	Z,		zcaron,		NoSymbol	]	};
+};
+
+partial alphanumeric_keys
+xkb_symbols "slovak" {
+
+    include "vok_sk(basic)"
+
+    include "level3(ralt_switch)"
+
+    name[Group1]= "slovak";
+
+    key <AE01> {	[     exclam,	NoSymbol,	1,		NoSymbol	]	};
+    key <AE02> {	[     lcaron,	at,		2,		Lcaron		]	};
+    key <AE03> {	[     scaron,	numbersign,	3,		Scaron		]	};
+    key <AE04> {	[     ccaron,	dollar,		4,		Ccaron		]	};
+    key <AE05> {	[     tcaron,	percent,	5,		Tcaron		]	};
+    key <AE06> {	[     zcaron,	asciicircum,	6,		Zcaron		]	};
+    key <AE07> {	[     yacute,	ampersand,	7,		Yacute		]	};
+    key <AE08> {	[     aacute,	asterisk,	8,		Aacute		]	};
+    key <AE09> {	[     iacute,	parenleft,	9,		Iacute		]	};
+    key <AE10> {	[     eacute,	parenright,	0,		Eacute		]	};
+
+    key <AD01> {	[	  q,	Q, 		backslash,	bar		]	};
+
+    key <BKSL> {	[ocircumflex,	uacute,		dead_diaeresis,	dead_circumflex	]	};
+};
+
+partial alphanumeric_keys
+xkb_symbols "slovak_qwertz" {
+
+    include "vok_sk(slovak)"
+
+    include "level3(ralt_switch)"
+
+    name[Group1]= "slovak_qwertz";
+
+    key <AB01> {	[	  y,	Y,		yacute,		NoSymbol	]	};
+    key <AD06> {	[	  z,	Z,		zcaron,		NoSymbol	]	};
+};
+
