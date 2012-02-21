@@ -81,7 +81,8 @@ xkb_symbols "basic" {
 
     key <LSGT> {	[ backslash,	bar,		ssharp,		dead_doubleacute]	};
     
-    key <SPCE> {	[     space,    U00A0,         U2009,		space		]	};
+    // za vsech okolnosti mezera dela normalni mezery
+    key <SPCE> {	[     space,    space,         space,		space		]	};
 
 };
 
